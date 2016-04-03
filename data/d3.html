@@ -6,24 +6,49 @@
 <script src="//d3js.org/topojson.v1.min.js"></script>
 
     </head>
+<style>
+
+thetype.8 { fill: #cdc; }
+thetype.16 { fill: #8F2222; }
+thetype.24 { fill: #8F2322; }
+thetype.32 { fill: #FFF300; }
+thetype.48 { fill: #cdc; }
+
+
+</style>
+
 <body>
 
         <script>
 
 var width = 960,
-    height = 1160;
+    height = 1060;
+
+var myprojection = d3.geo.mercator()
+
+// var myprojection = d3.geo.albers()
+//     .center([41.5, -81.62])
+//     .rotate([4.4, 0])
+//     .parallels([50, 60])
+//     .scale(17000)
+//     .translate([width / 2, height / 2]);
+
+
+var thepath = d3.geo.path()
+    .projection(myprojection);
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
 d3.json("contourstopojson.json", function(error, uk) {
-  if (error) return console.error(error);
-  svg.append("path")
-      .datum(topojson.feature(uk, uk.objects.contoursgeojson))
-      .attr("d", d3.geo.path().projection(d3.geo.mercator()));
+svg.selectAll(".contoursgeojson")
+    .data(topojson.feature(uk, uk.objects.contoursgeojson).features)
+  .enter().append("path")
+    .attr("class", function(d) { return "thetype " + d.walkmax; })
+    .attr("d", thepath);
 
-// contoursgeojson is the name of my collection, defined by line4 of the topojson file 
+// contoursgeojson is the name of my collection, defined by line4 of the topojson file
 
   console.log(uk);
 });

@@ -15,7 +15,7 @@
           "properties": {
             "index": 0,
             "walking_time / 60 _min": 0,
-            "walking_time / 60 _max": 8,
+            "walkmax": 8,
             "label": "0 - 8"
           },
           "arcs": [
@@ -434,7 +434,7 @@
           "properties": {
             "index": 1,
             "walking_time / 60 _min": 8,
-            "walking_time / 60 _max": 16,
+            "walkmax": 16,
             "label": "8 - 16"
           },
           "arcs": [
@@ -1018,7 +1018,7 @@
           "properties": {
             "index": 2,
             "walking_time / 60 _min": 16,
-            "walking_time / 60 _max": 24,
+            "walkmax": 24,
             "label": "16 - 24"
           },
           "arcs": [
@@ -1253,7 +1253,7 @@
           "properties": {
             "index": 3,
             "walking_time / 60 _min": 24,
-            "walking_time / 60 _max": 32,
+            "walkmax": 32,
             "label": "24 - 32"
           },
           "arcs": [
@@ -1392,7 +1392,7 @@
           "properties": {
             "index": 4,
             "walking_time / 60 _min": 32,
-            "walking_time / 60 _max": 40,
+            "walkmax": 40,
             "label": "32 - 40"
           },
           "arcs": [
@@ -1461,7 +1461,7 @@
           "properties": {
             "index": 5,
             "walking_time / 60 _min": 40,
-            "walking_time / 60 _max": 48,
+            "walkmax": 48,
             "label": "40 - 48"
           },
           "arcs": [
