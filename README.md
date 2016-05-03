@@ -8,7 +8,7 @@ The purpose of this project is to generate walking distance data for a list of a
 
 Our project is currently using python 2.7 
 
-1. Install [pip, virtualenv, and virtualenvwrapper](https://github.com/codeforamerica/howto/blob/master/Python-Virtualenv.md) if you haven't already. 
+1. Install [pip and virtualenv](https://github.com/codeforamerica/howto/blob/master/Python-Virtualenv.md) if you haven't already. (virtualenvwrapper is not needed)
 2. Clone the directory 
 3. Go inside the RTAheatmap project folder
 4. Create virtualenv for this project ```virtualenv --no-site-packages venv```
