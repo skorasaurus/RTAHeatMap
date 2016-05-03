@@ -1,6 +1,13 @@
-from RTAHeatMap.DataGeneration import *
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-__author__ = 'Mathew Bramson'
+# from DataGeneration import *
+
+from DataGeneration.MapboxAPIWrapper import MapboxAPIWrapper
+from DataGeneration.DatabaseHandler import DatabaseHandler
+from DataGeneration.UniformMapGenerator import UniformMapGenerator
+from DataGeneration.MapLocation import MapLocation
+from DataGeneration.DataGenerator import DataGenerator
 
 __all__ = [
     'MapboxAPIWrapper',
