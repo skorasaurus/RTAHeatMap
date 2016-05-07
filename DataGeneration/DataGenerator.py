@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 from DataGeneration import DatabaseHandler
 from MapboxAPIWrapper import MapboxAPIWrapper
 from MapboxAPIWrapper import MapboxAPIError
@@ -8,7 +11,7 @@ import requests
 class DataGenerator:
 
     def __init__(self,
-                 handler=DatabaseHandler(db_file_name='db.sqlite3'),
+                 handler=DatabaseHandler.DatabaseHandler(db_file_name='db.sqlite3'),
                  stops=None,
                  wrapper=None):
         self.handler = handler
