@@ -1,8 +1,11 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import unittest
 
 import pandas
 
-from RTAHeatMap.DataGeneration.UniformMapGenerator import UniformMapGenerator
+from .context import UniformMapGenerator
 
 
 class TestUniformMapGenerator(unittest.TestCase):

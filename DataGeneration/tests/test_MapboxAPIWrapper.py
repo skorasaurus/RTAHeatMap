@@ -1,9 +1,12 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import unittest
 from mock import patch, mock_open, mock, Mock
 import requests
-from DataGeneration.MapboxAPIWrapper import MapboxAPIWrapper
-from DataGeneration.MapLocation import MapLocation
-from DataGeneration.MapboxAPIWrapper import MapboxAPIError
+from .context import MapboxAPIWrapper
+from .context import MapLocation
+from .context import MapboxAPIError
 
 
 from sys import version_info

@@ -1,7 +1,10 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import unittest
 from mock import patch, MagicMock, Mock
-from DatabaseHandler import DatabaseHandler
-from DataGeneration.MapLocation import MapLocation
+from .context import DatabaseHandler
+from .context import MapLocation
 import os
 import types
 import pandas as pd

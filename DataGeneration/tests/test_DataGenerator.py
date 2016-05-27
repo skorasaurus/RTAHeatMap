@@ -1,8 +1,11 @@
-from DataGeneration import DataGenerator
-from DataGeneration import DatabaseHandler
-from DataGeneration import MapLocation
-from DataGeneration import MapboxAPIWrapper
-from MapboxAPIWrapper import MapboxAPIError
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from .context import DataGenerator
+from .context import DatabaseHandler
+from .context import MapLocation
+from .context import MapboxAPIWrapper
+from .context import MapboxAPIError
 import unittest
 from mock import Mock, patch, MagicMock, mock
 

@@ -1,5 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import unittest
-from DataGeneration.MapLocation import MapLocation
+from .context import MapLocation
 
 
 class TestMapLocation(unittest.TestCase):

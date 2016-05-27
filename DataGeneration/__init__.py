@@ -1,13 +1,3 @@
-from MapboxAPIWrapper import MapboxAPIWrapper
-from DatabaseHandler import DatabaseHandler
-from UniformMapGenerator import UniformMapGenerator
-from MapLocation import MapLocation
-from DataGenerator import DataGenerator
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-__all__ = [
-    'MapboxAPIWrapper',
-    'DatabaseHandler',
-    'UniformMapGenerator',
-    'MapLocation',
-    'DataGenerator'
-]
